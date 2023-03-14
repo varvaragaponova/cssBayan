@@ -32,6 +32,10 @@ footer {
     font-size: 1.4rem;
   }
 
+  main {
+    color: #9f5f3f;
+  }
+
   h1 {
     margin: 5% 2.5%;
     font-size: 4rem;
@@ -51,7 +55,7 @@ footer {
   }
 
   .bayan_container:hover p {
-    color: #9f5f3f;
+    color: #000;
   }
 
   .bayan_item {
@@ -88,12 +92,21 @@ footer {
   input[type="radio"]:hover+.wrapper {
     height: 80vh;
     cursor: pointer;
-    color: #9f5f3f;
+    color: #000;
   }
 
   input[type="radio"]:active+.wrapper {
-    filter: opacity(20%);
+    filter: opacity(5%);
     cursor: grab;
+  }
+
+  input[type="radio"]:active+.wrapper > .bayan_header > p {
+    color: #9f5f3f;
+    font-weight: 600;
+  }
+
+  input[type="radio"]:active+.wrapper svg > path {
+    fill: #9f5f3f;
   }
 
   .bayan_header+img {
@@ -127,6 +140,10 @@ footer {
 
   body {
     font-size: 1.2rem;
+  }
+
+  main {
+    color: #9f5f3f;
   }
 
   h1 {
@@ -171,7 +188,7 @@ footer {
 
   input[type="radio"]:checked+.wrapper {
     height: 65vh;
-    color: #9f5f3f;
+    color: #000;
     font-weight: bold;
   }
 
@@ -205,6 +222,10 @@ footer {
 
   body {
     font-size: 1rem;
+  }
+
+  main {
+    color: #9f5f3f;
   }
 
   h1 {
@@ -249,7 +270,7 @@ footer {
 
   input[type="radio"]:checked+.wrapper {
     height: 70vh;
-    color: #9f5f3f;
+    color: #000;
     font-weight: bold;
   }
 
