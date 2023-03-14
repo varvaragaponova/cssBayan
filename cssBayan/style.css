@@ -27,7 +27,7 @@ footer {
 
 /* Desktop */
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1023.98px) {
   body {
     font-size: 1.4rem;
   }
@@ -50,13 +50,13 @@ footer {
     opacity: 0;
   }
 
-  .bayan_container:hover .button_item {
+  /* .bayan_container:hover .button_item {
     opacity: 1;
-  }
+  } */
 
-  .bayan_container:hover p {
+  /* .bayan_container:hover p {
     color: #000;
-  }
+  } */
 
   .bayan_item {
     padding: 0 3%;
@@ -88,8 +88,7 @@ footer {
     height: 10vh;
   }
 
-  input[type="radio"]:checked+.wrapper,
-  input[type="radio"]:hover+.wrapper {
+  input[type="radio"]:checked+.wrapper {
     height: 80vh;
     cursor: pointer;
     color: #000;
@@ -124,19 +123,18 @@ footer {
     height: 1.2rem;
     border-radius: 100%;
     transform: rotate(-45deg);
-    transition: transform 0.2s;
+    transition: all 0.2s;
   }
 
-  input[type="radio"]:checked+.wrapper>.bayan_header img,
-  input[type="radio"]:hover+.wrapper>.bayan_header img {
-    transform: rotate(-90deg);
-    transition: transform 0.2s;
+  input[type="radio"]:checked+.wrapper > .bayan_header > svg {
+    transform: rotate(-180deg);
+    transition: all 0.3s;
     cursor: pointer;
   }
 }
 /* Tablet */
 
-@media screen and (min-width: 820px) and (max-width: 1080px) {
+@media screen and (min-width: 820px) and (max-width: 1023.98px) {
 
   body {
     font-size: 1.2rem;
@@ -207,12 +205,12 @@ footer {
     height: 1rem;
     border-radius: 100%;
     transform: rotate(-45deg);
-    transition: transform 0.2s;
+    transition: all 0.3s;
   }
 
-  input[type="radio"]:checked+.wrapper>.bayan_header img {
-    transform: rotate(-90deg);
-    transition: transform 0.2s;
+  input[type="radio"]:checked+.wrapper>.bayan_header svg {
+    transform: rotate(-180deg);
+    transition: all 0.3s;
   }
 }
 
@@ -289,11 +287,36 @@ footer {
     height: 1rem;
     border-radius: 100%;
     transform: rotate(-45deg);
-    transition: transform 0.2s;
+    transition: all 0.3s;
   }
 
-  input[type="radio"]:checked+.wrapper>.bayan_header img {
-    transform: rotate(-90deg);
-    transition: transform 0.2s;
+  input[type="radio"]:checked+.wrapper>.bayan_header svg {
+    transform: rotate(-180deg);
+    transition: all 0.3s;
+  }
+}
+
+/*Hover*/
+
+@media (any-hover: hover) {
+
+  .bayan_container:hover .button_item {
+    opacity: 1;
+  }
+
+  .bayan_container:hover p {
+    color: #000;
+  }
+
+  input[type="radio"]:hover+.wrapper {
+    height: 80vh;
+    cursor: pointer;
+    color: #000;
+  }
+
+  input[type="radio"]:hover+.wrapper>.bayan_header svg {
+    transform: rotate(-180deg);
+    transition: transform 0.4s;
+    cursor: pointer;
   }
 }
